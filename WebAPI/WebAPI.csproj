@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="BLL\" />
+    <Folder Include="DAL\" />
+    <Folder Include="Conext\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\ViewModel\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Utils\" />
+    <Folder Include="MapperProfile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DAL\PaginationResult.cs" />
+    <Compile Remove="Profile\Profile.cs" />
+    <Compile Remove="Profile\EmptyClass.cs" />
+    <Compile Remove="Models\CharLenghtAttribute.cs" />
+    <Compile Remove="Interfaces\IGenreRepository.cs" />
+    <Compile Remove="Interfaces\IGenreService.cs" />
+    <Compile Remove="BLL\GenreService.cs" />
+    <Compile Remove="DAL\GenreRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DataBase.db" />
+    <None Remove="DataBase.db" />
+  </ItemGroup>
+</Project>
